@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Database connection
-const uri = "process.env.MONGO_URI";
+const uri = "mongodb://127.0.0.1:27017";
 const client = new MongoClient(uri);
 
 let db, booksCollection, borrowedCollection;
